@@ -45,14 +45,12 @@ namespace SHUBHAM_PRODUCT.Repository
                 }
                 else
                 {
-                    return null; // or throw an exception if you prefer
+                    return null; 
                 }
             }
             catch (Exception ex)
             {
-                // Handle the exception as needed, e.g., log it or return an error response.
-                // You might also want to rethrow it if it's a critical error.
-                // Example: throw ex;
+
                 return null; // Returning null as an indication of an error
             }
         }

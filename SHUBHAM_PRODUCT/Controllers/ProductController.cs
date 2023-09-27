@@ -10,14 +10,11 @@ using Dapper;
 
 namespace SHUBHAM_PRODUCT.Controllers
 {
-
-
     /// <summary>
     /// ProductController for perform actions
     /// </summary>
     public class ProductController : Controller
     {
-
         private readonly IDbConnection db;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IProduct _product;
@@ -39,15 +36,9 @@ namespace SHUBHAM_PRODUCT.Controllers
         /// <returns>The Index view.</returns>
         public IActionResult Index()
         {
-            //string query = "select CatId, PName from SHUBHAM_Category;";
-            //IEnumerable<Item> items = db.Query<Item>(query);
-            //ViewBag.Items = new SelectList(items, "CatId", "PName");
-
             List<ProductModel> list = _product.GetAll();
-
             return View(list);
         }
-
 
         /// <summary>
         /// Show the details of product
@@ -109,16 +100,14 @@ namespace SHUBHAM_PRODUCT.Controllers
                         }
                         product.Image = "~/Images/" + uniqueFileName;
                     }
-                    else
-                    {
-                        product.Image = "~/Images/NoImage.png";
-                    }
                     _product.Add(product);
+                    TempData["insert_message"] = "Student Added..";
                     return RedirectToAction(nameof(Index));
                 }
             }
             catch (Exception ex)
             {
+                TempData["insert_message"] = "Some Error occured"+ex.Message;
                 throw new Exception(ex.Message);
             }
             return View(product);
@@ -176,16 +165,14 @@ namespace SHUBHAM_PRODUCT.Controllers
                         }
                         product.Image = "~/Images/" + uniqueFileName;
                     }
-                    else
-                    {
-
-                    }
                     _product.Update(product);
+                    TempData["update_message"] = "Student Updated";
                     return RedirectToAction(nameof(Index));
                 }
             }
             catch (Exception ex)
             {
+                TempData["update_message"] = $"An error occurred: {ex.Message}";
                 throw new Exception(ex.Message);
             }
             return View(product);
@@ -216,10 +203,31 @@ namespace SHUBHAM_PRODUCT.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             _product.Remove(id);
+            TempData["delete_message"] = "Student Deleted";
             return RedirectToAction("Index"); // Redirect to the action that displays the list of products.
         }
 
 
+
+        /// <summary>
+        /// Check the Unique 
+        /// </summary>
+        /// <param name="id">Id of the product</param>
+        /// <returns> Returns the variable in json formate</returns>
+
+
+
+        //public IActionResult IsNameUnique(string Name, int? Id)
+        //{
+        //    if (Id.HasValue)
+        //    {
+        //        var isUnique = !_product.GetAll().Any(e => e.Name == Name && e.Id != Id);
+        //        return Json(isUnique);
+        //    }
+
+           
+        //    return Json(true);
+        //}
 
 
     }
