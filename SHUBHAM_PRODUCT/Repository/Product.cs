@@ -34,7 +34,7 @@ namespace SHUBHAM_PRODUCT.Repository
                     CategoryId = Convert.ToInt32(product.CategoryId),
                     Description = product.Description,
                     Quantity = product.Quantity,
-                    Type = product.Type,
+                    TypeId = Convert.ToInt32(product.TypeId),
                     Image = product.Image
                 };
                 var affectedRows = db.Execute(sql, parameters, commandType: CommandType.StoredProcedure);
@@ -105,7 +105,7 @@ namespace SHUBHAM_PRODUCT.Repository
                 CategoryId = Convert.ToInt32(product.CategoryId),
                 Description = product.Description,
                 Quantity = product.Quantity,
-                Type = product.Type,
+                TypeId = Convert.ToInt32(product.TypeId),
                 Image = product.Image
             };
             var affectedRows = db.Execute(sql, parameters, commandType: CommandType.StoredProcedure);

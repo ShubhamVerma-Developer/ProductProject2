@@ -71,10 +71,13 @@ namespace SHUBHAM_PRODUCT.Controllers
         /// <returns>The create view.</returns>
         public IActionResult Create()
         {
-            string query = "select CatId, PName from SHUBHAM_Category;";
-            IEnumerable<Item> items = db.Query<Item>(query);
+            string query1 = "select CatId, PName from SHUBHAM_Category;";
+            IEnumerable<Item> items = db.Query<Item>(query1);
             ViewBag.Items = new SelectList(items, "CatId", "PName");
 
+            string query2 = "select Pid, Ptype from SHUBHAM_Type;";
+            IEnumerable<TypeItem> typeItems = db.Query<TypeItem>(query2);
+            ViewBag.TypeItems = new SelectList(typeItems, "Pid", "Ptype");
             return View();
         }
 
@@ -136,7 +139,11 @@ namespace SHUBHAM_PRODUCT.Controllers
         {
             string query = "select CatId, PName from SHUBHAM_Category;";
             IEnumerable<Item> items = db.Query<Item>(query);
-            ViewBag.Items = new SelectList(items, "CatId", "PName"); // ViewBag is used to pass data to the view
+            ViewBag.Items = new SelectList(items, "CatId", "PName");
+
+            string query2 = "select Pid, Ptype from SHUBHAM_Type;";
+            IEnumerable<TypeItem> typeItems = db.Query<TypeItem>(query2);
+            ViewBag.TypeItems = new SelectList(typeItems, "Pid", "Ptype");
 
             ProductModel product = _product.GetProduct(id);
 

@@ -15,9 +15,9 @@ namespace SHUBHAM_PRODUCT.Models
         public string Description { get; set; }
         [Required(ErrorMessage = "Please Enter the quantity.")]
         public int Quantity { get; set; }
-        [Required(ErrorMessage = "Please Choose the type.")]
-        public string Type { get; set; }
-
+        
+        public string? Type { get; set; }
+        public string TypeId { get; set; }
         public string? Image { get; set; }
         public string? CategoryName { get; set; }
     }
@@ -26,5 +26,11 @@ namespace SHUBHAM_PRODUCT.Models
     {
         public int CatId { get; set; }
         public string PName { get; set; }
+    }
+
+    public class TypeItem
+    {
+        public int Pid { get; set; }
+        public string Ptype { get; set; }
     }
 }
