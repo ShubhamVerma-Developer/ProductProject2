@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SHUBHAM_PRODUCT.props" />
+</Project>

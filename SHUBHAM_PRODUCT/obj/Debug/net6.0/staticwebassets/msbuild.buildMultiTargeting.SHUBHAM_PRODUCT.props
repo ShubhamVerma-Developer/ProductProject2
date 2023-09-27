@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SHUBHAM_PRODUCT.props" />
+</Project>
