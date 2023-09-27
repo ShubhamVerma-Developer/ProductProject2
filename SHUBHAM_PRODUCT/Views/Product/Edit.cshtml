@@ -4,9 +4,6 @@
     ViewData["Title"] = "Edit";
 }
 
-
-
-<h4>Edit Product</h4>
 <hr />
 <div class="row">
     <div>
@@ -64,7 +61,8 @@
 
             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" type="file" name="ImageFile" data-val="true" data-val-required="Please Select a Image." />
+                <img src="@Url.Content(Model.Image)" alt="Product Image" class="img-fluid" style="max-height: 150px; max-width: 100%;" />
+                <input asp-for="Image" type="file" name="ImageFile" data-val="true" data-val-required="Please Select a Image." accept=".png,.jpeg" />
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <br />

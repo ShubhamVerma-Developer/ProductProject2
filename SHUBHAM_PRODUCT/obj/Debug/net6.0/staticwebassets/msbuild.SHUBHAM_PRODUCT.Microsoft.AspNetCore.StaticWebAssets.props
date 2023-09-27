@@ -112,6 +112,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\265906d5-68bc-413d-9a26-4c01f6009048_bird-8118926_1280.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\330270bf-fec9-40c1-b374-83bb0749b0df_bird-8118926_1280.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>SHUBHAM_PRODUCT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SHUBHAM_PRODUCT</BasePath>
+      <RelativePath>Images/330270bf-fec9-40c1-b374-83bb0749b0df_bird-8118926_1280.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\330270bf-fec9-40c1-b374-83bb0749b0df_bird-8118926_1280.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\3e95ad60-7149-48dd-921a-16aaef2c1615_lighthouse-8191282_1280.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>SHUBHAM_PRODUCT</SourceId>
@@ -223,6 +239,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\726e2954-0015-484d-b917-fe1375b77721_switzerland-8056381_1280.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\ac063f4d-693f-4121-9481-9fbd70f11101_lighthouse-8191282_1280.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>SHUBHAM_PRODUCT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SHUBHAM_PRODUCT</BasePath>
+      <RelativePath>Images/ac063f4d-693f-4121-9481-9fbd70f11101_lighthouse-8191282_1280.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\ac063f4d-693f-4121-9481-9fbd70f11101_lighthouse-8191282_1280.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\ee3b4904-a9cb-45dc-b134-d95fc43d5d77_switzerland-8056381_1280.jpg))">
       <SourceType>Package</SourceType>

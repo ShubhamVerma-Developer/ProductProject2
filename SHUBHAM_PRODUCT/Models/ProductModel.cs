@@ -7,7 +7,6 @@ namespace SHUBHAM_PRODUCT.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Please Enter a Name")]
-        [RegularExpression(@"^[^\d]+$", ErrorMessage = "Name can not contain numbers or special characters")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Please Select a Category.")]
         public int CategoryId { get; set; }
@@ -17,6 +16,7 @@ namespace SHUBHAM_PRODUCT.Models
         public int Quantity { get; set; }
         
         public string? Type { get; set; }
+        //[Required(ErrorMessage = "Please choose the Product Type.")]
         public string TypeId { get; set; }
         public string? Image { get; set; }
         public string? CategoryName { get; set; }

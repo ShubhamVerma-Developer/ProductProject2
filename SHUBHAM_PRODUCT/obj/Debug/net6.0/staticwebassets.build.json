@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+UQ9S5Qe5aPoAgw6uYfKJS3lftKSmhZ5UKkMx2zoOy4=",
+  "Hash": "hq8yhn8Vp2cKa7x9NciTZyEfs7fVxSyaUshkBV853Wc=",
   "Source": "SHUBHAM_PRODUCT",
   "BasePath": "_content/SHUBHAM_PRODUCT",
   "Mode": "Default",
@@ -170,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\265906d5-68bc-413d-9a26-4c01f6009048_bird-8118926_1280.jpg"
     },
     {
+      "Identity": "C:\\Project Practice\\SHUBHAM_PRODUCT2\\SHUBHAM_PRODUCT\\wwwroot\\Images\\330270bf-fec9-40c1-b374-83bb0749b0df_bird-8118926_1280.jpg",
+      "SourceId": "SHUBHAM_PRODUCT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project Practice\\SHUBHAM_PRODUCT2\\SHUBHAM_PRODUCT\\wwwroot\\",
+      "BasePath": "_content/SHUBHAM_PRODUCT",
+      "RelativePath": "Images/330270bf-fec9-40c1-b374-83bb0749b0df_bird-8118926_1280.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\330270bf-fec9-40c1-b374-83bb0749b0df_bird-8118926_1280.jpg"
+    },
+    {
       "Identity": "C:\\Project Practice\\SHUBHAM_PRODUCT2\\SHUBHAM_PRODUCT\\wwwroot\\Images\\3e95ad60-7149-48dd-921a-16aaef2c1615_lighthouse-8191282_1280.jpg",
       "SourceId": "SHUBHAM_PRODUCT",
       "SourceType": "Discovered",
@@ -287,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\726e2954-0015-484d-b917-fe1375b77721_switzerland-8056381_1280.jpg"
+    },
+    {
+      "Identity": "C:\\Project Practice\\SHUBHAM_PRODUCT2\\SHUBHAM_PRODUCT\\wwwroot\\Images\\ac063f4d-693f-4121-9481-9fbd70f11101_lighthouse-8191282_1280.jpg",
+      "SourceId": "SHUBHAM_PRODUCT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project Practice\\SHUBHAM_PRODUCT2\\SHUBHAM_PRODUCT\\wwwroot\\",
+      "BasePath": "_content/SHUBHAM_PRODUCT",
+      "RelativePath": "Images/ac063f4d-693f-4121-9481-9fbd70f11101_lighthouse-8191282_1280.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ac063f4d-693f-4121-9481-9fbd70f11101_lighthouse-8191282_1280.jpg"
     },
     {
       "Identity": "C:\\Project Practice\\SHUBHAM_PRODUCT2\\SHUBHAM_PRODUCT\\wwwroot\\Images\\ee3b4904-a9cb-45dc-b134-d95fc43d5d77_switzerland-8056381_1280.jpg",

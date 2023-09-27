@@ -82,11 +82,6 @@ namespace SHUBHAM_PRODUCT.Controllers
         }
 
 
-
-
-
-
-
         /// <summary>
         /// To save the record inside the database by using stored procedure
         /// </summary>

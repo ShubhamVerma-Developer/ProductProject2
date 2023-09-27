@@ -5,11 +5,18 @@
     ViewData["Title"] = "Index";
 }
 
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <h2>Product Dashboard</h2>
+    </nav>
+</header>
 
+
+<div>
  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-1.13.6/b-2.4.2/r-2.5.0/sc-2.2.0/sb-1.5.0/sp-2.2.0/sl-1.7.0/datatables.min.css" rel="stylesheet">
+ <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-1.13.6/b-2.4.2/r-2.5.0/sc-2.2.0/sb-1.5.0/sp-2.2.0/sl-1.7.0/datatables.min.css" rel="stylesheet">
+</div>
    
-
 <p>
     <a class="btn btn-info mb-4" onclick="CommonPopup('@Url.Action("Create","Product",null,@Context.Request.Scheme)','Add New Product')">Add New Product</a>
 </p>
@@ -81,10 +88,7 @@
 </table>
 
 
-
-
 @* <-----------------------------------------------------------------------------------------------------------------------------------------------------------*@
-
 
 <div class="modal fade" id="unique-modal" tabindex="-1" role="dialog" aria-labelledby="UniqueModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -111,10 +115,6 @@
     });
 
 </script>
-
-
-
-
 @* <-----------------------------------------------------------------------------------------------------------------------------------------------------------*@
 
 
